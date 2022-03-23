@@ -6,7 +6,7 @@ public class Conta {
 	private String tipocliente;
 	private String nomecliente;
 	private String dataabertura;
-	private String taxa;
+	private double taxa;
 	private double saldo;
 
 	public String getTipoconta() {
@@ -41,13 +41,12 @@ public class Conta {
 		this.dataabertura = dataabertura;
 	}
 	
-
-	public String getTaxa() {
+	public double getTaxa() {
 		return taxa;
 	}
 
-	public void setTaxa(String taxa) {
-		this.taxa = taxa;
+	public void setTaxa(int taxa) {
+		this.taxa = 0;
 	}
 
 	public double getSaldo() {

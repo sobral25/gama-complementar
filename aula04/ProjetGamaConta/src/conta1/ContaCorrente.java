@@ -1,5 +1,10 @@
 package conta1;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
+	
+	public ContaCorrente() {
+		setTaxa(10);
+		setSaldo(0);
+	}
 
 }
