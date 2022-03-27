@@ -11,6 +11,7 @@ public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
 		int op;
+		int oc;
 		
 		do {
 			System.out.println("1.Abrir Conta");
@@ -21,7 +22,7 @@ public static void main(String[] args) {
 			op = input.nextInt();
 			
 			if(op==1) {
-				int oc;
+				
 				System.out.println("Qual o tipo de conta?\n1.Poupança\n2.Corrente");
 			    oc = input.nextInt();
 				if(oc==1)  {
@@ -30,9 +31,8 @@ public static void main(String[] args) {
 		      ContaCorrente cc = new ContaCorrente();
 		    }
 			System.out.println("Conta criada com sucesso");
-			
-			}
-			
+			}	
+		
 		}while(op!=5); 
 }
 }			
